@@ -1,5 +1,7 @@
-GitHub TextMate bundle
---------------------
+GitHub Coda plug-in
+===================
+
+This is a port of [drnic's GitHub bundle for TextMate](http://github.com/drnic/github-tmbundle).
 
 Contains the following commands specific to the current file:
 
@@ -16,7 +18,7 @@ Contains the following commands for creating [gists](http://gist.github.com):
 * Create private gist from selection - same as above, but the Gist will be private.
 
 Prerequisites
-=============
+-------------
 
 The bundle requires Ruby, RubyGems, and the 
 [git](http://www.jointheconversation.org/rubygit/) RubyGem:
@@ -24,34 +26,27 @@ The bundle requires Ruby, RubyGems, and the
 		sudo gem install git
 
 Installation
-============
+------------
 
 To install via Git:
 
-		mkdir -p ~/Library/Application\ Support/TextMate/Bundles
-		cd ~/Library/Application\ Support/TextMate/Bundles
-		git clone git://github.com/drnic/github-tmbundle.git "GitHub.tmbundle"
-		osascript -e 'tell app "TextMate" to reload bundles'
+		mkdir -p ~/Library/Application\ Support/Coda/Plug-ins
+		cd ~/Library/Application\ Support/Coda/Plug-ins
+		git clone git://github.com/bobthecow/GitHub.codaplugin.git
 
-Source can be viewed or forked via GitHub: [http://github.com/drnic/github-tmbundle/tree/master](http://github.com/drnic/github-tmbundle/tree/master)
+Then restart Coda.
 
-To install without Git:
-
-		mkdir -p ~/Library/Application\ Support/TextMate/Bundles
-		cd ~/Library/Application\ Support/TextMate/Bundles
-		wget http://github.com/drnic/github-tmbundle/tarball/master
-		tar zxf drnic-github-tmbundle*.tar.gz
-		rm drnic-github-tmbundle*.tar.gz
-		mv drnic-github-tmbundle* GitHub.tmbundle
-		osascript -e 'tell app "TextMate" to reload bundles'
+Source can be viewed or forked via GitHub: [http://github.com/bobthecow/GitHub.codaplugin](http://github.com/bobthecow/GitHub.codaplugin)
 
 To enable [Gist](http://gist.github.com) support, make sure you've followed the instructions on your [account page](https://github.com/account) for adding your GitHub user and API Token to your global Git config. You can
 create gists without specifying your credentials, but they won't be associated with your account.
 
 Author
-======
+------
 
-Dr Nic Williams, drnicwilliams@gmail.com, [http://drnicwilliams.com](http://drnicwilliams.com)
+Coda port by [Justin Hileman](http://github.com/bobthecow)
+
+TextMate bundle by Dr Nic Williams, drnicwilliams@gmail.com, [http://drnicwilliams.com](http://drnicwilliams.com)
 
 With contributions from: 
  
